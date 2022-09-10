@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script settimrout and cleartimeout</title>
+
+</head>
+<body>
+    <div class="container">
+        Time is Right Now: <span id="span"></span>
+        <h1>this is the heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa totam nesciunt aperiam corporis unde laboriosam tempora eaque, esse quo pariatur dolore officia architecto blanditiis nisi hic qui enim, maiores rem quidem natus neque saepe?</p>
+    </div>
+    
+</body>
+
+<script>
+    console.log('testing console');
+
+ //setTimeout  --> allows us to run the function once after the interval of time
+ //setTimeout  --> allows us to run the function repeatedlu after the interval of time
+            
+            function greet(morning,name){
+                console.log(morning+' Hellow '+name+' how are you');
+            }
+    //   greet();
+
+                 //       setTimeout
+
+    // let cleartime = setTimeout(greet,4000,'Good morning,','amanullah');
+    // console.log(cleartime); //we run the id of setTimeout
+    // setTimeout(greet(),4000);      //this statement will not run cause we didn't use functioin cully brases
+
+    //  clearTimeout(cleartime);
+
+
+              //Set interval
+
+//    let intervalId= setInterval(greet,2000);
+
+    //    console.log(intervalId);   //we run setInterval Id
+
+//    clearInterval(intervalId);
+
+
+
+           //   We are creating time function and also setTimeout
+
+           function Timenow(){
+               time = new Date();
+               console.log(time);
+                   
+            // document.getElementById('span').innerHTML=time;    //first way
+
+            let span = document.getElementById('span').innerHTML=time;    //Second way
+
+            //    let span = document.getElementById('span');
+            //    span.innerHTML=time;                     //third way
+           }
+
+           setInterval(Timenow, 1000);
+
+
+
+    
+</script>
+</html>

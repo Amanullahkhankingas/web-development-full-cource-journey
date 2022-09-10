@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>HTML Form</h2>
+    <form action="backend.php"></form>
+    <div>
+        <label for="Name">Name</label>
+        <input type="text" name="myname" id="Name">
+    </div><br>
+    <div>
+        Role:<input type="text" name="myrole">
+    </div><br>
+    <div>
+        Email:<input type="email" name="myemail">
+    </div><br>
+    <div>
+        Date: <input type="date" name="mydate">
+    </div><br>
+    </div><br>
+    <div>
+        Bonous<input type="number" name="mybonous" id="">
+    </div><br>
+    <div>
+        Are you eligible?<input type="checkbox" name="eligibility" checked>
+    </div><br>
+    <div>
+        Write something about you<br> <textarea name="mytext" cols="90" rows="40"></textarea>
+    </div><br>
+    <div>
+        Gender : Male<input type="radio" name="mygender"> FeMale<input type="radio" name="mygender">
+        Other<input type="radio" name="mygender">
+    </div><br>
+
+    <label for="car">Car</label>
+    <select name="myCar" id="car">
+        <option value="lumbergini">Lumbergini</option>
+        <option value="ferraari" selected>ferraari</option>
+    </select>
+
+    <br>
+    <label for="boots">Boots</label>
+    <select name="myboots" id="boots">
+        <option value="sporty">sporty</option>
+        <option value="guchi" selected>Guchi</option>
+        <option value="black">black</option><br>
+
+        <div><br>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </select><br>
+
+
+    <textarea name="mytextaboutopenien" id="" cols="100" rows="10" style="width:90vw;"></textarea>
+    <br>
+    <label for="laptop">Laptop</label>
+    <select name="mylaptop" id="laptop">
+        <option value="DELL 3000">Dell</option>
+        <option value="HP Lite book" selected>Hp</option>
+        <option value="Toshiba">Toshiba</option>
+    
+    </select>
+</body>
+
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "this is the best package ever",
+  "main": "tut69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "likly"
+  ],
+  "author": "\"aman\"",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "slugify": ">1.3.0"
+  }
+}

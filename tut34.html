@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+       <style>
+        
+        .container{
+            display: flex;
+
+        }
+        .card{
+
+            /* border: 2px solid red; */
+            margin: 30px 15px;
+            padding: 25px;
+            background-color: rgb(121, 214, 214);
+           
+          
+            box-shadow: 4px 4px  rgb(238, 16, 16);
+
+            box-shadow: 12px 18px 29px rgb(0 0 0);
+
+            box-shadow: -12px -18px 29px rgb(0 0 0);
+
+
+            box-shadow: 12px 12px 22px 7px rgb(0 0 0);
+
+
+            box-shadow:inset 12px 12px 22px 7px rgb(0 0 0) ,inset -12px -12px 22px 7px rgb(0 0 0) ;
+
+            box-shadow: 5px 5px red ,10px 10px blue;
+            box-shadow: 23px 33px 23px grey;
+            border-radius: 10px;
+
+
+
+
+        }
+        p{
+            /* box-shadow: 23px 23px 23px red,
+                        -23px -23px 23px red  ; */
+                        text-shadow: 5px 4px 4px rgb(168, 77, 77)
+        }
+
+    h2{
+
+        text-shadow:2px 2px white;
+        /* text-shadow:3px 3px 2px white;
+        text-shadow:inset 3px 3px 2px white; */
+    }
+
+
+       </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card" id="card-1">
+            <h2>C++ cource is start now</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quia! A commodi velit fugit quos obcaecati quisquam labore repudiandae. Corrupti libero ipsa quidem quas, ullam incidunt provident, est sapiente ea optio, quod quam esse voluptatibus illum accusantium laborum iste expedita?</p>
+        </div>
+
+        <div class="card" id="card-2">
+            <h2>HTML is on way</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur exercitationem consequuntur alias error obcaecati nisi cumque quod, officiis necessitatibus aut corrupti nostrum qui voluptate deserunt recusandae eveniet, fuga reprehenderit esse fugiat iure? Itaque enim provident odio tenetur sed adipisci omnis.</p>
+        </div>
+        <!-- <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, provident. Voluptatibus, itaque quasi. Non culpa veritatis aperiam? Nulla doloremque possimus pariatur exercitationem, perspiciatis, vero aperiam odio consequatur minus illum ratione harum eos! Distinctio, eos! Rerum aperiam recusandae odio, qui quibusdam amet beatae commodi sed vero, aspernatur incidunt, veniam doloribus ut.</p>
+        </div> -->
+    </div>
+    
+</body>
+</html>

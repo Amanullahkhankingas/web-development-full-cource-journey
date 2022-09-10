@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/ Custom Properties</title>
+
+</head>
+<style>
+
+    :root{
+        --maxh:100vh;
+        --maxw:100vw;
+        --primary-color:rgb(64,55,110);
+        --dangur-color:rgb(242,182,223);
+    }
+    /* body{
+        min-width: 100vw;
+        min-height: 100vh;
+    } */
+    .container{
+
+        display: flex;
+        background-color: var(--primary-color);
+        width: var(--maxw);
+        height: var(--maxh);
+
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        /* creation of local variable */
+         --color-background:black;
+         --cool-color:green;
+
+       width: 150px;
+       height: 150px;
+       /* border: 2px solid var(--cool-color); */
+       background-color:var(--primary-color);
+       margin: 5px 16px;
+         box-shadow: 4px 4px 20px var(--dangur-color),
+                    inset 12px 12px 60px var(--color-background),
+                    inset 19px 19px 70px var(--cool-color);
+      
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

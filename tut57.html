@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn{
+            background-color: aqua;
+            border:2px solid black;
+            border-radius: 11px;
+            color: white;
+            padding: 8px 19px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>this is the heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem recusandae veniam nostrum, dicta, qui numquam illo atque vitae velit iure tempora. Officia, velit neque! Nulla magnam aperiam, in qui animi nisi vero vitae at.</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+</body>
+
+<script>
+          let para = document.getElementById('para')
+          para.addEventListener('mouseover',function run(){
+                    // alert('mouse insdie graph')
+              
+              
+                    // let ale='mouse insdie graph';
+                   //   console.log(ale);
+
+                     console.log('mouse inside');
+
+          });
+
+        
+          para.addEventListener('mouseout',function run(){
+
+            //   alert('mouse is get outside from graph')
+            
+
+            //   let aler ='mouse is get outside from graph';
+                //  console.log(aler);
+
+
+                 console.log('mouse is outside');
+                 
+
+          });
+
+
+
+//////////////////////////
+    function togglehide(){
+
+        let btn= document.getElementById('btn');
+        let para= document.getElementById('para');
+        
+         //let para=3;    //this will make error
+
+        if(para.style.display !="none"){  
+         para.style.display='none';
+    
+}
+else{
+    
+      para.style.display='block';
+
+  }
+     
+
+    }
+
+
+
+</script>
+</html>

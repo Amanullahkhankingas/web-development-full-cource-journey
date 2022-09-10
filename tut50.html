@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script string function</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is the heading </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates, omnis rerum reprehenderit maiores nam quaerat. At expedita possimus, repellat aut porro qui voluptatem necessitatibus tempora provident natus deleniti ducimus asperiores numquam consequatur facere impedit laborum quae excepturi, sequi, eaque deserunt harum quidem! Deserunt, officia.</p>
+    </div>
+
+    <script>
+
+        var aman="amanulah ";
+        var sentence ="Hi I am amanulah and who are you,tell me about yourself";
+
+        console.log(sentence);
+        //first accurence of a substring
+        var position = sentence.indexOf('y');
+        
+        //last accurence of a substring
+         position = sentence.lastIndexOf("y")
+
+        console.log(position);
+         
+
+        // substring from a string
+        var subsentence= sentence.slice(33,55);
+        console.log(subsentence);
+      
+        var subsentence1= sentence.substr(21,11);
+        console.log(subsentence1);
+      
+      var subsentence2=sentence.substring(3,9);
+      console.log(subsentence2);   
+
+
+    //   replace_sentence=sentence.replace('Hi','Hellow');
+      replace_sentence=sentence.replace('who are you','what is your destination');
+      console.log(sentence);
+      console.log(replace_sentence);
+
+
+      console.log(sentence.toUpperCase());
+      console.log(sentence.toLowerCase());
+
+    //   concation of two string 
+    
+    concation_of_string=aman.concat(' Extra value');
+    console.log(concation_of_string)
+
+    concation_of_string1=aman.concat(sentence);
+    console.log(concation_of_string1)
+
+
+    // trim founction using 
+    var cool="        this         is           me          ";
+
+    console.log(cool. trim());
+    console.log(cool);
+
+   
+    // extraction of string 
+
+    // extract_from_aman= aman.charAt(4);
+    extract_from_aman= aman.charCodeAt(4);
+    console.log(extract_from_aman);
+
+
+    
+    // short way to slice some string 
+    
+    console.log(sentence[8]);
+
+
+
+    </script>
+    
+</body>
+</html>

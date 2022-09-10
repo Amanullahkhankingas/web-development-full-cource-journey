@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Time and Date</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Time is : <span id="time"></span></h1>
+
+    </div>
+    <script>
+
+console.log('tutorial of time and date');
+
+
+
+           
+    // let date= new Date(2000000);
+ 
+    let date= new Date(2090,11,2,12,23,45);
+    console.log(date);
+
+    // let date1= new Date("2090-12-2");
+    // console.log(date1);
+
+    let year= date.getFullYear()
+    console.log("year is :"+year);
+
+    let month= date.getMonth()
+    console.log("month is :"+month);
+
+    let day= date.getDate()
+    console.log("day is :"+day);
+
+    let hour= date.getHours()
+    console.log("hour is :"+hour);
+
+    let minuts= date.getMinutes()
+    console.log("minuts is :"+minuts);
+
+
+
+
+    date.setFullYear(3400);
+    date.setMonth(6);
+    console.log('reset year is :'+date)
+
+    //write in developer console       Date.now()
+
+
+    
+    //  function datetime(){
+    //        let newdate= new Date();
+    //         //  console.log(newdate);
+    //         //  let time=document.getElementById('time');
+    //         //  time.innerHTML=newdate;
+    //        time.innerHTML= newdate;
+    //        console.log(newdate);
+    //    }
+    //    setInterval(datetime,1000);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute and nth child pseudo selectors</title>
+    <style>
+    
+    .container{
+        display: block;
+        width: 250px;
+        margin: 25px auto;
+                     
+    }
+    input[type=submit]{
+
+        display: block;
+        width: 70px;
+        margin: 5px auto;
+        margin-right: 130px;
+    }
+    a{
+        font-size: 24px;
+        display: block;
+    }
+    a[target="_blanke"]{
+        color: greenyellow;
+
+    }
+    input[type="submit"]{
+
+        border: 2px solid rgb(92, 92, 22);
+        color: white;
+        background-color: black;
+    }
+    /* li:nth-child(6){
+        background-color: coral;
+    } */
+
+    /* li:nth-child(2n+0){
+        background-color: rgb(224, 20, 116);
+    } */
+
+    /* li:nth-child(3n+1){
+        background-color: rgb(224, 20, 116);
+    } */
+
+           li:nth-child(even){
+
+            background-color: cyan;
+           }
+           li:nth-child(odd){
+
+            background-color: rgb(204, 83, 13);
+           }
+</style>
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="http://facebook.com" target="_blanke">Go to facebook</a>
+        <a href="http://facebook.com" target="_self">Go to Google</a>
+
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="password" placeholder="Enter your Password">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">first</li>
+            <li class="item" id="item-2">second</li>
+            <li class="item" id="item-3">third </li>
+            <li class="item" id="item-4">fourth</li>
+            <li class="item" id="item-5">fifth </li>
+            <li class="item" id="item-6">sixth</li>
+            <li class="item" id="item-7">severth</li>
+            <li class="item" id="item-8">eight</li>
+            <li class="item" id="item-9">ninth</li>
+            <li class="item" id="item-10">tenth</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

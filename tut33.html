@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Before and after pseudo selectors
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background-color: black;
+            font-family: 'Bebas Neue', cursive;
+
+        }
+
+        p { }
+
+        header::before {
+
+            background: url("https://source.unsplash.com/random") no-repeat center center/cover;
+            content: "";
+
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.1;
+
+
+
+
+        }
+
+        .navigation {
+            display: flex;
+
+            font-size: 20px;
+        }
+
+        li {
+
+            list-style: none;
+
+            margin: 8px;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            /* border: 2px solid white; */
+            /* border-radius: 7px; */
+            margin: 125px auto;
+            /* padding: 43px; */
+
+
+            text-align: center;
+            width: 80%;
+        }
+
+        /* we use there after seudo selsctor */
+        .navigation::after {
+            content: "I this is my site for more information contact me";
+            font-size: 20px;
+            margin: 8px;
+            color: rgb(244, 230, 230);
+            background: rgb(60, 59, 59);
+            margin-left: 499px;
+            padding: 0 11px;
+            opacity: 0.5;
+            
+
+        }
+
+        /* we use there before seudo selsctor */
+        section::before {
+
+            /* content:"this is before pseudo selector usage" */
+        }
+        section::after{ 
+            content: " commodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,lcommodi expedita explicabo totam dolorum vel quam magni quisquam,l";
+            position: absolute;
+            /* top: 0; */
+            /* left: 0; */
+            width: 90%;
+            color: rgb(232, 204, 204);
+            background: rgb(28, 25, 25);
+            opacity: 0.07;
+
+            
+            /* content:"this is before pseudo selector usage" */
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <ul class="navigation">
+                <li class="item" id="item-1">Home</li>
+                <li class="item" id="item-2">Abouts Us</li>
+                <li class="item" id="item-3">Services</li>
+                <li class="item" id="item-4">Contect Us</li>
+            </ul>
+
+        </nav>
+    </header>
+    <section>
+        <h2>welcome to my world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nihil eveniet nisi, quasi ipsa qui similique
+            perspiciatis quibusdam rerum ad nobis odit commodi expedita explicabo totam dolorum vel quam magni quisquam,
+            incidunt sequi hic temporibus? Ipsum, nisi at natus quia blanditiis dignissimos inventore praesentium
+            molestiae eius saepe expedita harum dolorum?</p>
+    </section>
+
+    <hr>
+</body>
+
+</html>

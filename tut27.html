@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS visibility and z-index</title>
+    <style>
+
+        #box-1{
+            background-color: red;
+            border: 2px solid rgb(0, 0, 0);
+            width: 120px;
+            height: 120px;
+
+            position: relative;
+         top: 150px;
+         z-index: 8;
+
+
+        }
+
+        #box-2{
+            background-color:green;
+            border: 2px solid rgb(83, 13, 247);
+            width: 120px;
+            height: 120px;
+
+            /* visibility: hidden; */
+         /* display: none; */
+         
+         position: relative;
+         top: 100px;
+         left: 20px;
+         z-index: 8;
+
+         content-visibility:calc(0.1);
+
+
+
+        }
+
+        #box-3{
+            background-color:yellow;
+            border: 2px solid rgb(9, 227, 243);
+            width: 120px;
+            height: 120px;
+            
+            position: relative;
+            top: 50px;
+            z-index:6 ;
+
+        }
+
+        #box-4{
+            background-color:orange;
+            border: 2px solid rgb(21, 233, 92);
+            width: 120px;
+            height: 120px;
+            position: relative;
+            left: 20px;
+
+            z-index:6 ;
+
+
+        }
+
+        #box-5{
+            background-color: rgb(233, 10, 147);
+            border: 2px solid rgb(116, 247, 9);
+            width: 120px;
+            height: 120px;
+
+            position: relative;
+            bottom: 20px;
+            z-index: 5;
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h2>This is a header</h2>
+    <div class="contanour">
+      
+        <div class="box" id="box-1">first</div>
+        <div class="box" id="box-2">second</div>
+        <div class="box" id="box-3">third</div>
+        <div class="box" id="box-4">fourth</div>
+        <div class="box" id="box-5">fifth</div>
+
+    </div>
+    
+</body>
+</html>

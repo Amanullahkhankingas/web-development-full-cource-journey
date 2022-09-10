@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts
+    script(src='../static/java.js')
+
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/contect.css
+
+block content
+    div#form-container
+     form(action="/contect" , method ='post' , id="form-class") 
+         h1 CONTECT US 
+   
+         input(type="text" name="name" class="input-box" placeholder="Enter your name" )
+        
+         input(type="phone" name="phone" class="input-box" placeholder="Enter your Phone Number" )
+       
+         input(type="email" name="email" class="input-box" placeholder="Enter your Emaail id" )
+       
+         input(type="text" name="address" class="input-box" placeholder="Enter your address" )
+         input(type="text" name="desc" class="input-box" placeholder="Enter your concern" )
+         button Submit Now
+     

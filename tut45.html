@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids + Media Queries</title>
+    <style>
+    .container{
+                 display: grid;   
+                 grid-gap: 1rem;
+
+                 grid-template-areas: 
+                 'navbar navbar navbar navbar'
+                 'section section section aside'
+                 'footer footer footer footer'
+         ;
+              
+    }
+
+    #navbar{
+        grid-area: navbar;
+
+    }
+
+    #section{
+        grid-area: section;
+
+    }
+    #aside{
+        grid-area: aside;
+    }
+    
+    footer{
+        grid-area: footer;
+        text-align: center;
+    }
+
+    .box{
+        background-color: cornflowerblue;
+        border: 2px solid black;
+        padding:1rem;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+                     /* media gueries */
+
+                     body{
+                         display: grid;
+                         background-color: rgb(197, 255, 255);
+                     }
+          
+          @media screen  and (max-width:300px){
+
+            /* body{
+                background-color: rgb(12, 18, 29);
+            } */
+            .container{
+                
+
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer'
+        ;
+         }
+
+         #aside{
+             display: none;
+         }
+         span{
+              display: block;
+              text-align: center;
+              padding: 0.5rem;
+          }
+
+
+          }
+          
+          @media screen and (min-width:300px) and (max-width:500px){
+/* 
+            body{
+                background-color: rgb(216, 36, 36);
+
+            } */
+
+            .container{
+                
+
+                 grid-template-areas: 
+                 'navbar navbar navbar navbar'
+                 'section section section section'
+                 'aside aside aside aside'
+                 'footer footer footer footer'
+         ;
+          }
+          span{
+              display: block;
+              text-align: center;
+              padding: 0.5rem;
+          }
+        }
+          
+          @media screen and (min-width:500px) and (max-width:700px){
+
+            /* body{
+                background-color: rgb(12, 207, 77);
+            } */
+          }
+          
+          @media screen and (min-width:700px) and (max-width:900px){
+
+            /* body{
+                background-color: rgb(235, 15, 187);
+            } */
+          }
+         
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="box">
+             <span>Home</span>
+             <span>About us</span>
+             <span>Contect us </span>
+            </nav>
+
+        <section id="section" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. mmodi accusantium veritatis recusandae quo reiciendis maiores eveniet ducimus quidem velit sapiente temporibus molestiastis recusandae quo reiciendis maiores eveniet ducimus quidem velit sapiente temporibus molestia </section>
+
+        <aside id="aside" class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium officia, sequi deserunt co Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium officia, sequi deserunt co </aside>
+
+        <footer class="box">copy right @ www.amanullah.comQuod unde, minima iusto et commodi </footer>
+    </div>
+</body>
+</html>

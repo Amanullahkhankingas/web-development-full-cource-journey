@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is the heading</h1>
+
+    </div>
+    <script>
+        // console.log('this the tutorial of Arrow function')
+
+        function greet(){
+            console.log('we are in the function');
+        }
+
+        greet();
+
+               //ARROW FUNCTIONS
+
+            //    let greet1= ()=>{
+            //        console.log('we are in greet1 ARROW Function')
+            //    }
+            //         greet1();
+
+
+            //    let greet1= ()=> console.log('we are in greet1 ARROW Function')
+               
+            //         greet1();
+
+
+                    //RETURN value ARROW function
+
+                    // Returnval=(a,b)=>{
+                    //     return a+b;
+                    // }
+                //    console.log( Returnval(50,59));
+
+
+                //     Returnval2=(a,b)=> a+b**4;
+                    
+                //    console.log( Returnval2(50,59));
+
+                   
+
+                //    let Half= a=>a/2;
+
+                //    console.log(Half(33));
+
+                     
+
+            //    setTimeout(() => {
+            //        console.log('we are in setTimeout function')
+            //    }, 3000);
+
+            //    setTimeout(()=> console.log('we are in setTimeout function'), 3000);
+
+
+            let obj={
+                 
+                arrayname:['aman','kolar','ahmad','Javad','Ahsan','Mobeen','Akhter'],
+
+                Greeting:"Good Morning",
+            
+                names_array_print(){ 
+
+                    this.arrayname.forEach((students)=>{
+                             
+                        console.log(this.Greeting +' cokroo koo'+" "+students);
+                    });
+
+                    // this.arrayname.forEach(function s(students){
+                             
+                    //     console.log(this.Greeting +' cokroo koo'+" "+students);
+                    // });
+
+                }
+
+            }
+
+            obj.names_array_print();
+
+            // console.log( obj.arrayname);
+            
+                            
+        
+
+    </script>
+    
+</body>
+</html>

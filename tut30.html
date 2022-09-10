@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box {
+        text-align: center;
+
+        height: 350px;
+        color: aliceblue;
+        background-color: brown;
+        border: 2px solid black;
+        display: none;
+        font-size: 48px;
+
+    }
+
+    @media only screen and (min-width:0px) and (max-width:300px) {
+
+        #box1 {
+
+            display: block;
+            color: black;
+            background-color: cyan;
+        }
+    }
+
+    @media only screen and  (min-width:300px) and (max-width:500px) {
+
+        #box2 {
+            display: block;
+            color: white;
+            background-color: yellow;
+
+        }
+    }
+
+    @media only screen and ( min-width:500px) and ( max-width:700px){
+
+        #box3{
+            display: block;
+
+
+            
+        }
+    }
+    @media only screen and ( min-width:700px) and ( max-width:900px){
+
+#box4{
+    display: block;
+    background-color: tomato;
+    color: teal;
+    
+
+    
+}
+}
+@media screen  and (min-width:900px ) and (max-width:1500px){
+
+    body{
+        background-color: black;
+        color: rgba(0, 98, 184, 0.705);
+    }
+    
+}
+</style>
+
+<body>
+
+
+    <h2 class="box" id="box1">i am a iphone</h2>
+    <h2 class="box" id="box2">i am a tablate</h2>
+    <h2 class="box" id="box3">i am adisktop computer</h2>
+    <h2 class="box" id="box4">i am a widescreen computer</h2>
+    hellow this is me
+    </div>
+</body>
+
+</html>

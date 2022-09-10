@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+
+.navbar {
+    background-color: #0a0a0a;
+    padding: 7px;
+}
+
+
+  .navbar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+ .navbar ul li{
+   list-style: none;
+   margin: 3px 23px;
+}
+ .navbar ul li a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+}
+.navbar ul li a:hover{
+ 
+  font-size: 1.7rem;
+  color: rgb(17, 16, 16);
+  font-weight: bold;
+  border-radius: 9px;
+  text-shadow: 3px 3px 4px white, -3px -3px 4px white;
+
+}
+
+/* logo putting */
+#logo img{
+  height: 38px;
+    filter: invert(2);
+    margin: 0px 11px
+}
+
+#logo h4{
+  color: rgb(0 0 0);
+  text-shadow: 5px 5px 4px #f72c2c, -5px -5px 4px #ffd6d6;
+  font-size: 20px;}
+#logo {
+  display: flex;
+  flex-direction: row;
+  /* position: relative;
+  top: 2px;
+  left: 12px; */
+  
+  align-items: center;
+  /* justify-content: center; */
+  margin: 5px 4px;
+}
+
+
+#introSection{
+  color: white;
+  text-shadow: 3px 3px 2px rosybrown;
+display: flex;
+justify-content: center;
+/* align-items: center; */
+height: 300px;
+font-size: 33px;
+background: url(static/img/bg2.jpg)no-repeat center center/cover;
+}
+
+/* Our mission section */
+
+#Ourmission {
+  
+  background: url(static/img/bg3.jpg)no-repeat center center/cover;
+  opacity: 0.7;
+  
+  
+  height: 382px;
+  /* font-size: 33px; */
+  /* text-shadow: 3px 3px 4px white, -3px -3px 4px white; */
+  background-color:  #38dcdc4d;
+}
+
+#Ourmission h1{
+
+
+  font-size: 40px;
+font-weight: bold;
+  text-align: center;
+  padding-top: 17px;
+  /* justify-content: center; */
+}
+
+/* #Ourmission::before{
+  content: "";
+  display: flex;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: url("static/img/bg2.jpg")no-repeat center center/cover;
+  z-index: -1;
+
+}  */
+
+ 
+  .cards {
+    margin: 36px 23px;
+    padding: 21px;
+    display: inline-block;
+    height: 200px;
+    width: 24%;
+    border: 2px solid black;
+    border-radius: 9px;
+    background-color: #38dcdc4d;
+    /* background: url("static/img/dance1.png")no-repeat center center/cover; */
+    
+}
+   
+    .cards h3{
+      text-align: center;
+      padding-bottom: 15px;
+      /* color: aqua; */
+    }
+
+.card-box{
+  display: flex;
+  flex-direction: row;
+
+}
+.card-img {
+  
+  padding: 13px 0px;
+  padding-left: 0px;
+}
+.card-img img{
+  height: 136px;
+  padding: 0px;
+  margin: 0px;
+}
+.card-content {
+  padding: 19px 0px;
+}
+
+/* Our client section  */
+
+
+
+#SponsorsSection {
+
+  
+  background: url(static/img/bg4.jpg)no-repeat center center/cover;
+  opacity: 0.4;
+
+  height:300px ;
+  width: auto;
+  background-color:rgb(71 156 156 / 54%);
+
+
+}
+
+
+
+#SponsorsSection h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 17px;
+  font-weight: bold;
+}
+
+.clients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.clients img{
+  height: 102px;
+    padding-top: 54px;
+    margin: 0px 17px;
+
+} 
+
+
+/* footer data management  */
+#footer{
+  display: flex;
+  background-color: black;
+  color: white;
+  /* text-align: center; */
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+

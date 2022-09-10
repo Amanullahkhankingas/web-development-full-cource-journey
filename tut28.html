@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexboxs
+    </title>
+    <style>
+        .contanour {
+            border: 2px solid black;
+            height: 400px;
+            width: 100%;
+
+            /* initilize the contanour as a flex box */
+            display: flex;
+          
+            /* Flex properties for plex contanour */
+
+           /* flex-direction: row;   (Default value of flex-direction is row) */
+             /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse;  */
+
+            /* flex-wrap: wrap; */  /*  (Default value of flex-wrap is no wrap) */
+            /* flex-wrap: wrap-reverse; */
+
+            /*(this is a shortand for flex-direction and flex-wrap)*/
+             
+            /* flex-flow: row-reverse wrap;  */
+  
+
+            /* justify-content  will justify the content in horizontal direction  */
+          
+             /* justify-content: center; */
+             /* justify-content: space-between; */
+             /* justify-content: space-evenly; */
+             /* justify-content: space-around; */
+            
+             /*alig-items  will align the content in virtical direction  */
+             
+             /*  align-items: center; */
+             /* align-items: flex-end; */
+             /* align-items: flex-start; */
+             /* align-items: stretch;  */
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            border: 2px solid rgb(22, 17, 17);
+            margin: 2px;
+            padding: 4px;
+
+
+        }
+        #item1{
+             flex-grow: 5;
+              /* flex-shrink: 7;  */
+              /* flex-basis: 70px; */
+
+                order: 5;
+         /* flex: 3 3 100px; */
+        }
+        #item2{
+            /* order: 6; */
+            /* flex: 3 3 50px; */
+           
+            /* align-self: center; */
+        }
+        #item3{
+
+            /* flex-grow: 7; */
+            /* flex-shrink: 3;  */
+            /* flex-basis: 200px; */
+            /* align-self: flex-end; */
+                /* order: 3;        */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanour">
+        <div class="item" id="item1">first</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <!-- <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div> -->
+    </div>
+
+</body>
+
+</html>

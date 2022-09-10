@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aimal gym</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('img/pexels-pixabay-260352.jpg');
+
+            height: 2000px;
+            margin: 0px;
+            padding: 0px;
+            font-size: large;
+
+        }
+
+        .header {
+            background-color: teal;
+            margin: 10px 0px;
+            border-radius: 14px;
+            position: sticky;
+            top: 0px;
+            height: 68px;
+        }
+
+        .left {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            margin: -9px auto;
+            width: 46%;
+            text-align: center;
+            padding: 0px;
+           
+        }
+
+        .right {
+            /* border: 2px solid green; */
+            display: inline-block;
+
+            position: absolute;
+            top: 0px;
+            right: 12px;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bold;
+           
+        }
+
+        .navbar li {
+            display: inline-block;
+            text-decoration: none;
+            padding: 8px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .navbar li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar li a:hover {
+            color: rgb(83, 68, 68);
+            text-decoration: underline;
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        .navbar li a:active {
+            color: rgb(50, 25, 143);
+            text-decoration: underline;
+            border: 2px solid rgb(43, 52, 129);
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        .left img {
+            display: block;
+            width: 45px;
+            filter: invert(100%);
+            margin: 0px auto;
+        }
+
+        h3 {
+
+            margin: 2px;
+        }
+
+        .btn {
+            background-color: teal;
+            /* width: 70px; */
+            padding: 6px 10px;
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            color: rgb(83, 68, 68);
+            background-color: black;
+
+
+        }
+
+        .btn:active {
+            color: rgb(20, 5, 224);
+            background-color: rgb(20, 12, 85);
+
+
+        }
+
+        .contanour {
+            border: 2px solid black;
+            width: 42%;
+            margin: 140px 64px;
+            padding: 25px;
+
+            position: sticky;
+            top: 130px;
+            border-radius: 20px;
+            padding-top: 10px;
+        }
+
+        .form-group {
+
+            margin: 10px;
+            text-align: center;
+            
+        }
+
+        .form-group .btn {
+
+            display: block;
+            width: 100px;
+
+            margin: 10px auto;
+            color: white;
+            background-color: gray;
+
+        }
+        .form-group .btn:hover{
+
+          
+            color: rgb(94, 80, 80);
+            background-color: rgb(0, 0, 0);
+
+        }
+        .form-group .btn:active{
+
+          
+            color: rgb(15, 30, 247);
+            background-color: rgb(124, 117, 189);
+
+        }
+
+        .input {
+
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 18px;
+            text-align: center;
+            width: 315px;
+            display: block;
+            margin: 6px auto;
+            padding: 8px;
+            font-size: large;
+        }
+        .input:hover{
+            border: 2px solid rgb(117, 103, 103);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+
+        <div class="left">
+            <img src="img/PikPng.com_weights-png_1689755.png" alt="">
+            <h3>Aimal Gym</h3>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">Contect us</a> </li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#"> Fitness Calculater</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+
+
+        </div>
+
+    </header>
+    <div class="contanour">
+        <h2>Join The Best Gym Of Loralai</h2>
+
+        <form action="Noextion.php">
+            <div class="form-group">
+                <input type="text" class="input" placeholder="Enter your Name">
+                <input type="text" class="input" placeholder="Enter your Age">
+                <input type="text" class="input" placeholder="Enter your Gender">
+                <input type="text" class="input" placeholder="Enter your Locality">
+                <input type="text" class="input" placeholder="Enter your Phone Number">
+                <input type="text" class="input" placeholder="Enter your email ID">
+                <button class="btn">Submit Now</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+/* Reset Css */
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+/* Variables */
+:root{
+
+    --background-color:red;
+}
+
+/* navvigation bar */
+#navbar{
+
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#navbar::before{
+       content: "";
+         color:white;
+         background-color: black;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         height: 100%;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.3;
+   
+}
+
+/* navigation bar logo and image  */
+
+
+#logo {
+         padding: 5px 5px;
+
+}
+
+#logo img{
+    padding: 4px 7px;
+    height: 48px;
+}
+
+
+/* navigation bar list style */
+
+#navbar ul{
+
+    display: flex;
+    flex-direction: row;
+   
+  
+
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.4rem;
+   
+}
+#navbar ul li a{
+  color: white;
+    display: block;
+    padding: 2px 15px;
+     text-decoration: none;
+     border-radius: 71px;
+     text-shadow:  7px 7px 5px black;
+     border:2px solid rgb(163, 163, 163);
+ 
+     
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+  
+}
+
+       /* Home Section */
+
+       #home{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           padding: 3px 200px;
+          height: 400px;
+          position: relative;
+          top: 0px;
+          left: 0px;
+
+       }
+
+#home::before{
+    content: "";
+    background:url("bg1.jpg")no-repeat center center/cover ;
+    position: absolute;
+    top: -66px;  /*  i change this*/
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.36;
+
+}
+#home h1{
+    color: white;
+    /* font-size: 2.9rem;
+    padding: 6px; */
+    text-shadow:2px 2px 6px black;
+
+
+}
+#home p{
+    color: white;
+    font-size: 1.3rem;
+    padding: 9px;
+    text-shadow:5px 5px 9px black ; 
+    text-align: center;
+}
+    /* Services section */
+
+  
+    #service{
+
+        display: flex;
+        padding: 12px;
+    }
+    #service .box{
+        border: 2px solid brown;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 6px;
+        background-color: rgb(235, 232, 232);
+
+    }
+
+    #service .box img{
+       display: block;
+       
+        height: 150px;
+        margin: auto;
+    }
+
+
+        /* Client Section  */
+
+        #client-section{
+
+       /* height: 250px; */
+       position: relative;
+
+        }
+
+        #client-section::before{
+        
+            content: "";
+            position: absolute;
+            background: url("bg2.jpg") no-repeat center center/cover;
+         
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            /* border: 2px solid white; */
+
+
+        }
+
+        #clients{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+        }
+
+        #clients img{
+            /* display: block; */
+             height: 100px;
+             /* padding-top: 70px; */
+             padding: 30px  0px;
+        }
+
+
+         /*       Contact Section                       Contact Section  */
+
+         #contact{
+             display: flex;
+             flex-direction: column;
+             position: relative;
+         }
+
+         
+         #contact::before{
+            content: "";
+            position: absolute;
+            background: url("bg3.1.jpg") no-repeat center center/cover;
+            /* background: url("bg3.jpg") */
+             top: 0px;
+            left: 0px; 
+            width: 100%;
+            height:100%;
+            z-index: -1;
+        }
+         #contact-box {
+
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           padding: 34px;
+           
+        } 
+
+         #contact-box form {
+
+          width: 40%;
+        } 
+         #contact-box form label{
+
+          font-size: 1.3rem;
+        } 
+         /* #contact-box form input{
+
+          font-size: 1rem;
+        }  */
+
+        #contact-box input,
+        #contact-box textarea{
+
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 10px;
+
+        font-size: 1rem;
+        border-radius: 9px;
+
+          
+           
+        } 
+
+       footer{
+           background-color: black;
+           color: white;
+           font-size: 20px;
+
+       }
+
+
+
+
+         /* other part  */
+
+         /* #contact{
+             display: flex;
+             position: relative;
+             height: 350px;
+             j
+          
+         
+            
+         }
+
+         #contact::before{
+             content: "";
+             position: absolute;
+             width: 100%;
+             height:100%;
+             z-index: -1;
+             background: url("bg3.1.jpg") no-repeat center center/cover;
+             /* background: url("bg3.jpg")
+         } */
+         
+
+        footer{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+
+        } */
+
+
+
+    /* Utilities */
+
+  .btn{
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+    margin: 30px 30px;
+    background-color: rgb(110, 80, 80);
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .btn:hover{
+    color: rgb(99, 47, 47);;
+    
+    background-color: rgb(231, 222, 222);
+    border-radius: 12px;
+} */
+
+ 
+    .h-primary{
+
+        font-size: 2.9rem;
+        padding: 6px;
+    }
+    .h-secondary{
+
+        font-size: 1.7rem;
+        padding: 6px;
+    }
+
+
+.center{
+    text-align: center;
+}

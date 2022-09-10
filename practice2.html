@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+</head>
+<style>
+body{
+    display: flex;
+    background-color: brown;
+    color: wheat;
+}
+.container{
+    display: flex;
+    background: #000;
+    height: 23px;
+    border: 2px solid blue;
+    border-radius: 23px;
+    width: 60vw;
+}
+.box{
+    background-color: aqua;
+    width: 3%;
+    height: 100%;
+    border-radius: 23px;
+    opacity: 0.5;
+    animation: box 3s ease-in-out 0.1s 3 forwards alternate;
+
+}
+@keyframes box {
+    0%{
+        width: 3%;
+    }
+    50%{
+        width: 100%;
+
+    }
+    
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+
+    }
+    
+}
+</style>
+<body>
+    <label for="div">this is htme</label> 
+    <div class="container">
+        <div id="div" class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selecters</title>
+
+<style>
+    h1{
+
+        color: white;
+        background-color: black;
+        text-align: center;
+        font-weight: bold;
+    }
+    /* div p{
+
+        color: rgb(255, 255, 255);
+        background-color: greenyellow;
+    } */
+    /* div >p{
+
+        color: rgb(26, 218, 20);
+        background-color: greenyellow;
+    } */
+    div+p{
+              /* when div have direct subling p  */
+
+         color: rgb(26, 218, 20);
+        background-color: greenyellow;
+    }
+
+
+
+</style>
+</head>
+<body>
+    <h1>This is the More on Selecter in CSS</h1>
+
+<div class="container">
+<div class="box">
+    <p>this is a paragraph</p>
+
+    <ul>
+        <li> <p>this is a paragrape within a li</p></li>
+    </ul>
+</div>
+<p>this is another paragraph</p>
+
+</div>
+<P>this is outer paragraph</P>
+    
+</body>
+</html>

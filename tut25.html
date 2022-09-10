@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position absolute,relative,fixed,sticky </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .contanour {
+          
+            background-color: burlywood;
+            border: 2px solid brown;
+            border-radius: 6px;
+            height: 7000px;
+        }
+
+        .box {
+
+            display: inline-block;
+            box-sizing: border-box;
+            /* background-color: cadetblue; */
+            width: 90px;
+            height: 90px;
+            border-radius: 12px;
+
+            border: 2px solid violet;
+            margin: 4px;
+            padding-top: 6px;
+            /* padding-right: 6px; */
+            text-align: center;
+
+
+        }
+
+        #box3 {
+
+
+            /* boxes position  */
+
+            /* position: static; */
+
+            /* position: absolute;
+
+               top: 216px;
+               left: 44px; */
+            /* right: 6px; */
+            /* 
+               position: relative;
+
+               top: 216px;
+               left: 44px; */
+
+            /* pattern create by myself */
+
+            /* position: relative;
+
+            top: 100px; */
+                        
+           /* position: sticky;
+           top: 3px; */
+          
+          
+
+
+        }
+
+        #box4 {
+
+            position: fixed;
+
+            bottom: 0px;
+            left: 40px;
+
+           
+
+        }
+
+        /* #box1 {
+
+
+            position: relative;
+
+            top: 100px;
+
+
+        }
+
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="contanour">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+
+    </div>
+
+</body>
+
+</html>
